@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML na prática</title>
+</head>
+<body>
+    <h1 id="inicio">Introdução ao HTML na prática</h1>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Falando sobre Tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#lista-ordenada">Listas ordenadas</a></li>
+        <li><a href="#lista-nao-ordenada">Listas não ordenadas</a></li>
+        <li><a href="#link">Links</a></li>
+        <li><a href="#referencia">Referências</a></li>
+
+
+    </ul>
+
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código.</p>
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+    <p>Definição do documento (doctype)</p>
+    <p>Cabeça (head)</p>
+    <p>Corpo (body)</p>
+
+    <ul>
+        <p>Doctype - Definindo o documento:</p>
+        <li>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.</li>
+    </ul>
+    <ul>
+        <p>HEAD:</p>
+        <li>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</li>
+    </ul>
+    <ul>
+        <p>BODY:</p>
+        <li>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags "body" e "/body".</li>
+    </ul>
+
+    <h2 id="tags">Falando sobre Tags</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>As tags são formadas por uma estrutura própria, iniciam com o sinal “menor que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+    <p>As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco” (block-level) e “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de seu elemento pai, que também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline, geralmente usamos para demarcação de conteúdos de texto.</p>
+
+    <h2 id="textos">Textos</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Cabeçalhos são normalmente utilizados para identificar páginas e seções e possuem aparência diferenciada do restante do texto. No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags h1, h2, h3, h4, h5 e h6, sendo h1 o maior/mais relevante e h6 o menor/menos relevante.</p>
+    <p>Parágrafos de texto são gerados na HTML por meio das tags "p" "/p". Esse é um exemplo de tag cuja disposição na tela se dá em forma de bloco, ou seja, um parágrafo é posto sempre abaixo do outro.</p>
+    
+    <h2 id="lista-ordenada">Listas ordenadas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>As listas ordenadas ou numeradas são usadas para indicar alguma sequência ou numeração</p>
+    <p>As tags usadas para criar uma lista ordenada são "ol" e "li". A tag "ol" é usada para definir a lista e a tag "li" é usada para cada item da lista.</p>
+
+    <h2 id="lista-nao-ordenada">Listas não ordenadas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>As listas não numeradas são usadas para listar itens, sem se preocupar com sua sequência. Chamamos de lista de marcadores apenas.</p>
+    <p>As tags usadas para criar uma lista não ordenada são "ul" e "li". A tag "ul: é usada para definir a lista e a tag "li" é usada para cada item da lista.</p>
+
+    <h2 id="link">Links</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>No HTML, os links são definidos pela tag "a". Dentro dessa tag incluímos o atributo href (Hypertext Reference), que é o endereço de destino do link. Dentro do conteúdo da tag <a>, incluímos então o texto ou elemento que servirá como redirecionador, ou seja, que ao ser clicado, executará a função de redirecionar para o endereço dentro do atributo href.</p>
+     <p>Dessa forma, a sintaxe básica do HTML link é:</p>
+     <p>"a href="url"Exemplo"/a"</p>
+     <p>A tag "a" pode ser utilizada dentro ou fora dos demais elementos do HTML.</p>
+
+     <h2 id="referencia">Referências</h2>
+     <small><a href="#inicio">(Voltar)</a></small>
+     <p>https://www.devmedia.com.br/trabalhando-com-listas-ordenadas-no-html/21739</p>
+     <p>https://www.devmedia.com.br/html-basico-codigos-html/16596</p>
+     <p>https://www.homehost.com.br/blog/tutoriais/links-html/</p>
+
+
+</body>
+</html>
+
